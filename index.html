@@ -15,10 +15,12 @@
     <body>
         <button onclick="rand_num()">Start Game</button>
         <input type="input guess" id="guess_input">
-        <button onclick="check_guess()">Submit Guess</button>
-        <button onclick="rand_num()">Restart</button>
-        <div>
-
+        <button onclick="check_guess(); num_of_attempts();">Submit Guess</button>
+        <button onclick="new_rand_num()">Restart</button>
+        <div id="attempt_tracker">
+            
+        </div>
+        <div id="display_area">
         </div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
